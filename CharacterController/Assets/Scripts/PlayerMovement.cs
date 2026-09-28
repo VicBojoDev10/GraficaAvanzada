@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour, IMovable
     }
     public void Move(Vector2 direction)
     {
-        Vector3 movement = new Vector3(direction.x, -1, direction.y) * speed;
+        Vector3 movement = new Vector3(direction.x, 0f, direction.y) * speed;
         controller.Move(movement * Time.deltaTime);
     }
 }
